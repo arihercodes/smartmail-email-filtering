@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Large / generated datasets
+dataset/enron.csv
+dataset/enron_labeled.csv
+dataset/enron_sample.csv
+dataset/emails.json
+
+# Trained ML artifacts
+dataset/smartmail_model.pkl
+dataset/tfidf_vectorizer.pkl
+
+# Generated evaluation files
+dataset/classification_errors.csv
+dataset/confusion_matrix.csv
+dataset/error_analysis.csv
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables / secrets
+.env
+*.env
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

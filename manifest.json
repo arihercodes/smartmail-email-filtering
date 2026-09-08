@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SmartMail - AI Email Intelligence",
+  "version": "2.0.0",
+  "description": "Smart Gmail email classification, prioritization and inbox organization.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

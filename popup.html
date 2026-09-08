@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SmartMail</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div>
+            <h1>SmartMail</h1>
+            <p>AI-powered inbox intelligence</p>
+        </div>
+    </div>
+
+
+    <!-- SCORE -->
+
+    <div class="score-card">
+
+        <div class="score-top">
+            <span>Inbox Organization</span>
+            <strong id="health">--</strong>
+        </div>
+
+        <div class="progress">
+            <div id="progress"></div>
+        </div>
+
+        <p id="scoreDescription">
+            Analyze your inbox to get started.
+        </p>
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <button id="scan">
+        Analyze Inbox
+    </button>
+
+
+    <!-- STATS -->
+
+    <div class="stats">
+
+        <div class="stat">
+            <span class="icon">🔴</span>
+            <strong id="important">0</strong>
+            <small>Important</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">💼</span>
+            <strong id="career">0</strong>
+            <small>Career</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">📚</span>
+            <strong id="education">0</strong>
+            <small>Education</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">💰</span>
+            <strong id="finance">0</strong>
+            <small>Finance</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">📰</span>
+            <strong id="newsletter">0</strong>
+            <small>Newsletter</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">🛍️</span>
+            <strong id="promotion">0</strong>
+            <small>Promotion</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">🛒</span>
+            <strong id="shopping">0</strong>
+            <small>Shopping</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">⚠️</span>
+            <strong id="security">0</strong>
+            <small>Security</small>
+        </div>
+
+        <div class="stat">
+            <span class="icon">👥</span>
+            <strong id="social">0</strong>
+            <small>Social</small>
+        </div>
+
+    </div>
+
+
+    <!-- ANALYSIS -->
+
+    <div class="section-title">
+        Recent Analysis
+    </div>
+
+    <div id="summary" class="summary"></div>
+
+    <div id="emails">
+
+        <p class="empty">
+            Click "Analyze Inbox" to scan your emails.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
